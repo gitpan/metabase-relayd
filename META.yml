@@ -1,0 +1,37 @@
+---
+abstract: 'A relay server for Metabase'
+author:
+  - 'Chris Williams <chris@bingosnet.co.uk>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.47
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 0.95'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: metabase-relayd
+no_index:
+  directory:
+    - inc
+    - t
+provides:
+  App::Metabase::Relayd:
+    file: lib/App/Metabase/Relayd.pm
+    version: 0.02
+requires:
+  Config::Tiny: 2.12
+  File::Path: 0
+  File::Spec: 0
+  POE: 1.287
+  POE::Component::Metabase::Relay::Server: 0.02
+  Pod::Usage: 1.00
+  perl: 5.6.0
+resources:
+  homepage: http://github.com/bingos/metabase-relayd/tree
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/bingos/metabase-relayd.git
+version: 0.02
