@@ -21,10 +21,10 @@ no_index:
 provides:
   App::Metabase::Relayd:
     file: lib/App/Metabase/Relayd.pm
-    version: 0.18
+    version: 0.20
   App::Metabase::Relayd::Plugin:
     file: lib/App/Metabase/Relayd/Plugin.pm
-    version: 0.18
+    version: 0.20
 requires:
   Config::Tiny: 2.12
   File::Path: 0
@@ -38,4 +38,4 @@ resources:
   homepage: http://github.com/bingos/metabase-relayd/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/metabase-relayd.git
-version: 0.18
+version: 0.20
