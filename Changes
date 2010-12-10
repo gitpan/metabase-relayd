@@ -1,4 +1,14 @@
 ==============================
+2010-12-10 09:59:55 +0000 0.22
+==============================
+
+  commit f9f4cc9655dfa25551f81b5f8974cec1946f9bc8
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Dec 10 09:59:55 2010 +0000
+  
+    Silence the warnings about USE_SIGCHLD being redefined 
+
+==============================
 2010-08-11 15:05:43 +0100 0.20
 ==============================
 
