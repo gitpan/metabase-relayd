@@ -21,21 +21,21 @@ no_index:
 provides:
   App::Metabase::Relayd:
     file: lib/App/Metabase/Relayd.pm
-    version: 0.22
+    version: 0.24
   App::Metabase::Relayd::Plugin:
     file: lib/App/Metabase/Relayd/Plugin.pm
-    version: 0.22
+    version: 0.24
 requires:
   Config::Tiny: 2.12
   File::Path: 0
   File::Spec: 0
   Module::Load::Conditional: 0.38
-  POE: 1.287
-  POE::Component::Metabase::Relay::Server: 0.14
+  POE: 1.299
+  POE::Component::Metabase::Relay::Server: 0.20
   Pod::Usage: 1.00
   perl: 5.6.0
 resources:
   homepage: http://github.com/bingos/metabase-relayd/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/metabase-relayd.git
-version: 0.22
+version: 0.24

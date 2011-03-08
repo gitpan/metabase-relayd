@@ -1,4 +1,20 @@
 ==============================
+2011-03-08 13:40:09 +0000 0.24
+==============================
+
+  commit baeab6120f47939130cf7fb8f9343bb5d618e733
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Mar 8 13:40:09 2011 +0000
+  
+    Bumped version to 0.24
+
+  commit 96deb0ac7813f2a070b92d65be0dbe07b59e6cf9
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Tue Mar 8 13:39:20 2011 +0000
+  
+    Update required versions of prereqs 
+
+==============================
 2010-12-10 09:59:55 +0000 0.22
 ==============================
 
