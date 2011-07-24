@@ -9,12 +9,15 @@ use Cwd;
 use Getopt::Long;
 use Module::Pluggable search_path => ['App::Metabase::Relayd::Plugin'];
 use Module::Load::Conditional qw[can_load];
+use if ( $^O eq 'linux' ), 'POE::Kernel', { loop => 'POE::XS::Loop::EPoll' };
+use if ( $^O !~ /^(?:linux|MSWin32|darwin)$/ ), 'POE::Kernel', { loop => 'POE::XS::Loop::Poll' };
+use if ( scalar grep { $^O eq $_ } qw(MSWin32 darwin) ), 'POE::Kernel', { loop => 'POE::Loop::Event' };
 use POE;
 use POE::Component::Metabase::Relay::Server;
 
 use vars qw($VERSION);
 
-$VERSION = '0.26';
+$VERSION = '0.28';
 
 sub _metabase_dir {
   return $ENV{PERL5_MBRELAYD_DIR}
@@ -62,7 +65,7 @@ EOF
 sub run {
   my $package = shift;
   my %config = _read_config();
-  $config{offline} = delete $config{norelay};
+  $config{offline} = delete $config{norelay} if $config{norelay};
   my $version;
   GetOptions(
     "help"        => sub { pod2usage(1); },

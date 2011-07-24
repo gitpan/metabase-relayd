@@ -1,4 +1,26 @@
 ==============================
+2011-07-24 21:30:06 +0100 0.28
+==============================
+
+  commit efc03dc294e160c08ace826b3d3b97d6b17df29c
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Jul 24 21:30:06 2011 +0100
+  
+    Bump version to 0.28
+
+  commit e1fdd951249a57abcc57d569b7b73f494bf369c5
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Sun Jul 24 21:29:10 2011 +0100
+  
+    Fix issue with 'offline' configuration file option being ignored
+
+  commit 2e7f1b947509d56def7517a684293e62ab8fb898
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Fri Jun 3 00:09:20 2011 +0100
+  
+    Use different XS loops depending on platform 
+
+==============================
 2011-04-27 00:16:56 +0100 0.26
 ==============================
 

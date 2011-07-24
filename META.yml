@@ -8,7 +8,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 1.00'
+generated_by: 'Module::Install version 1.01'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,10 +21,10 @@ no_index:
 provides:
   App::Metabase::Relayd:
     file: lib/App/Metabase/Relayd.pm
-    version: 0.26
+    version: 0.28
   App::Metabase::Relayd::Plugin:
     file: lib/App/Metabase/Relayd/Plugin.pm
-    version: 0.26
+    version: 0.28
 requires:
   Config::Tiny: 2.12
   File::Path: 0
@@ -32,10 +32,15 @@ requires:
   Module::Load::Conditional: 0.38
   POE: 1.310
   POE::Component::Metabase::Relay::Server: 0.20
+  POE::XS::Loop::Poll: 1
+  POE::XS::Queue::Array: 0.005
   Pod::Usage: 1.00
   perl: 5.6.0
 resources:
-  homepage: http://github.com/bingos/metabase-relayd/tree
+  homepage: https://github.com/bingos/metabase-relayd/tree
   license: http://dev.perl.org/licenses/
-  repository: git://github.com/bingos/metabase-relayd.git
-version: 0.26
+  repository:
+    type: git
+    url: git://github.com/bingos/metabase-relayd.git
+    web: https://github.com/bingos/metabase-relayd/tree
+version: 0.28
