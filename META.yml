@@ -3,12 +3,13 @@ abstract: 'A relay server for Metabase'
 author:
   - 'Chris Williams <chris@bingosnet.co.uk>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
   Test::More: 0.47
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
-generated_by: 'Module::Install version 1.01'
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,10 +22,13 @@ no_index:
 provides:
   App::Metabase::Relayd:
     file: lib/App/Metabase/Relayd.pm
-    version: 0.28
+    version: 0.30
   App::Metabase::Relayd::Plugin:
     file: lib/App/Metabase/Relayd/Plugin.pm
-    version: 0.28
+    version: 0.30
+  metabase::relayd:
+    file: lib/metabase/relayd.pm
+    version: 0.30
 requires:
   Config::Tiny: 2.12
   File::Path: 0
@@ -36,11 +40,9 @@ requires:
   POE::XS::Queue::Array: 0.005
   Pod::Usage: 1.00
   perl: 5.6.0
+  unless: 0
 resources:
   homepage: https://github.com/bingos/metabase-relayd/tree
   license: http://dev.perl.org/licenses/
-  repository:
-    type: git
-    url: git://github.com/bingos/metabase-relayd.git
-    web: https://github.com/bingos/metabase-relayd/tree
-version: 0.28
+  repository: git://github.com/bingos/metabase-relayd.git
+version: 0.30
